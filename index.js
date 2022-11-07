@@ -58,7 +58,6 @@ class App extends Component {
       mode: CryptoJS.mode.CBC});
     if (decrypted) {
       try {
-        console.log("jimmy");
         console.log(decrypted);
         const str = decrypted.toString(CryptoJS.enc.Utf8);
         if (str.length > 0) {
